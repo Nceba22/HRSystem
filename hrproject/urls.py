@@ -15,9 +15,17 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.template import loader
+from django.contrib.auth.views import login
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+   
 	url(r'^leave/',include('leave.urls')),
+	#url(r'^index/','leave.views.index', name ='index'),
+	#url(r'^employee/',include ('employee')),
+	#url(r'^blog/',include ('blog.urls')),
+	#url(r'^registration_form/',include('registration_form.urls')),
+	 url(r'^admin/', admin.site.urls),
+
 	
 ]

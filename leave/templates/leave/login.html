@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 <title>Tangent MyHR solution</title>
+	</head>
+	
+	<body>
+		<h1>User login </h1>
+		{% if form.has_errors %}
+		<p>Your username and password are incorrect.
+		Please try again.</p>
+		{% endif %}
+		<div form = "form1">
+			<form method ="post" action= ".">
+			<p><label for "username">Username:</label>
+				{{form.username}}</p>
+			<p><label for "password">Password:</label>
+				{{form.password}}</p>
+			<input type="hidden" name ="text" value ="/" />
+			<input type ="submit" value="login" />
+			</form>
+		
+		</div>
+
+	</body>
+
+</html>

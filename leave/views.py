@@ -5,9 +5,21 @@ from django.contrib.auth import authenticate, login
 from django.views.generic import View
 from django.views import generic
 
-from django.template import loader
+
 #from .models import 
 
+		
+def index(request):
+    return HttpResponse ("<h1>Welcome to myHR!</h1>")
+	
+
+def index(request):
+	
+	return render(request, 'leave/home.html')
+	
+	
+
+''''
 class UserFormView(View):
 	#form_class = UserForm
 	template_name = 'leave/registration_form.html'
@@ -38,16 +50,7 @@ class UserFormView(View):
 					
 		#return render(request, self.template_name ["form":form])
 			
-		
-		
-def index(request):
-    return HttpResponse ("<h1>Welcome to myHR!</h1>")
+'''		
 
-def employee (request):
-    return render
-
-
-'''
-def index(request):
-	return render(request, 'leave/home.html')
-'''
+	
+	
